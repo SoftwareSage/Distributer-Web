@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Notice Distribution</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashborad_styles.css') }}">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Welcome, {{ username }}!</h1>
+            <a href="/logout" class="logout-btn">Logout</a>
+        </header>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="stat-card income-card">
+                <h2>Today’s Income</h2>
+                <p>₹{{ today_income }}</p>
+            </div>
+            <div class="stat-card notices-card">
+                <h2>Notices Distributed</h2>
+                <p>{{ notices_distributed }} / 500</p>
+            </div>
+            <div class="stat-card withdraw-card">
+                <h2>Withdrawable Amount</h2>
+                <p>₹{{ withdrawable_amount }}</p>
+            </div>
+        </section>
+
+        <!-- Actions Section -->
+        <section class="actions">
+            <form action="/withdraw" method="POST">
+                <button type="submit" class="withdraw-btn">Withdraw</button>
+            </form>
+            <a href="/tasks" class="task-btn">View Completed Tasks</a>
+        </section>
+    </div>
+</body>
+</html>

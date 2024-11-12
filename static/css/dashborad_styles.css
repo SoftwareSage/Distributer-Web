@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    animation: slideIn 1s ease-out;
+}
+
+.header h1 {
+    font-size: 26px;
+    color: #333;
+    animation: bounceIn 1s ease-out;
+}
+
+.logout-btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #ff1a1a;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    width: 30%;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+}
+
+.stat-card h2 {
+    font-size: 22px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Income Card */
+.income-card {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.notices-card {
+    background-color: #2196F3;
+    color: white;
+}
+
+.withdraw-card {
+    background-color: #FF9800;
+    color: white;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Actions Section */
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideInUp 1s ease-out;
+}
+
+.withdraw-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.withdraw-btn:hover {
+    background-color: #0056b3;
+}
+
+.task-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-btn:hover {
+    background-color: #218838;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

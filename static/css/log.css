@@ -1,0 +1,98 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0093E9, #80D0C7);
+}
+
+/* Login container and card styling */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-card h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Form input styling */
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #0093E9;
+}
+
+/* Login button styling */
+.login-btn {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0093E9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #007bbf;
+}
+
+/* Register link styling */
+.login-card p {
+    margin-top: 1rem;
+    color: #555;
+}
+
+.login-card a {
+    color: #0093E9;
+    text-decoration: none;
+}
+
+.login-card a:hover {
+    text-decoration: underline;
+}

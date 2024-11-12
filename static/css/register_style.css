@@ -1,0 +1,85 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0093E9, #80D0C7);
+}
+
+/* Container styling */
+.register-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Heading styling */
+.register-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #0093E9;
+}
+
+/* Register button styling */
+.register-btn {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0093E9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.register-btn:hover {
+    background-color: #007bbf;
+    transform: translateY(-2px);
+}
+
+/* Button focus effect */
+.register-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 147, 233, 0.5);
+}
